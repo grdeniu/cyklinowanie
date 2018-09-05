@@ -32,10 +32,10 @@ function scrollEffect() {
         $('.container-content').removeClass('scrolled');
     }
     if (actualPos > headerHeight + (aboutHeight * 0.5)) {
-        $('#tariff .tariff-content p').addClass('scrolled');
-        $('#tariff .tariff-content p:last-child').removeClass('scrolled');
+        $('#tariff p').addClass('scrolled');
+        $('#tariff p:last-child').removeClass('scrolled');
     } else {
-        $('#tariff .tariff-content p').removeClass('scrolled');
+        $('#tariff p').removeClass('scrolled');
     }
 }
 

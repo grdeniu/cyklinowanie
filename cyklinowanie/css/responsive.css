@@ -1,34 +1,20 @@
 @media all and (max-width: 1366px) {
     #main-nav,
-    .content-position p {
+    p {
         font-size: 24px;
     }
     #main-head h1 {
         font-size: 48px;
     }
     #main-head h2,
-    .content-position h2 {
+    .section-style h2 {
         font-size: 36px;
     }
-
-    .content-position h3 {
+    .section-style h3 {
         font-size: 24px;
     }
-
-    .content-position {
-        top: 10%;
-    }
-    #about .about-content .container-about .container-content {
+    #about .container-about .container-content {
         width: 50%;
-    }
-    #about {
-        height: 180vh;
-    }
-    #tariff {
-        height: 160vh;
-    }
-    #tips {
-        height: 140vh;
     }
 }
 
@@ -103,32 +89,18 @@
         transform: translateY(-3px) rotate(-90deg);
     }
 
-    #about .about-content .container-about .container-content {
+    #about .container-about .container-content {
         width: 100%;
-    }
-    #about {
-        height: 250vh;
     }
     .head-side {
         font-size: 2em;
     }
     #contact {
-        height: 140vh;
-    }
-    #contact .contact-content {
         flex-direction: column;
-        margin: auto;
     }
-    #contact .contact-content .container a,
-    #contact .contact-content .container .fa {
+    #contact .container a,
+    #contact .container .fa {
         font-size: 36px;
-    }
-}
-
-@media all and (max-width: 860px) {
-    #tariff,
-    #tips {
-        height: 170vh;
     }
 }
 
@@ -140,23 +112,11 @@
     #main-head h1 {
         letter-spacing: 2px;
     }
-    #about {
-        height: 280vh;
-    }
-    #tips {
-        height: 220vh;
-    }
 }
 
 @media all and (max-width: 484px) {
     #main-nav .logo {
         font-size: 1.25em;
-    }
-    #about {
-        height: 300vh;
-    }
-    #tips {
-        height: 250vh;
     }
     .hamburger,
     .hamburger::before,
@@ -165,7 +125,7 @@
         height: 2px;
         border-radius: 2px;
     }
-    #contact .contact-content .container a {
+    #contact .container a {
         font-size: 24px;
     }
 }
@@ -180,10 +140,7 @@
     #main-head h2 {
         font-size: 24px;
     }
-    #about {
-        height: 330vh;
-    }
     #tips {
-        height: 320vh;
+        height: 350vh;
     }
 }

@@ -112,7 +112,7 @@ a {
     transition-delay: 0.5s;
 }
 
-#main-head #btn {
+#main-head a{
     font-family: 'Karla', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -123,30 +123,20 @@ a {
     padding: 10px 10px;
     border-radius: 10px;
     transition: all 0.4s;
-
+    cursor: pointer;
 }
 
-#main-head #btn:hover {
+#main-head a:hover {
     background-color: rgba(255, 255, 255, 0);
-}
-
-#main-head #btn:hover a {
-    color: #f5c16c;
 }
 
 .section-style {
     position: relative;
     background-color: #f3eded;
-    height: 100vh;
-    padding: 0 15%;
-    padding-top: 15%;
+    height: auto;
+    padding: 10% 15%;
     text-align: left;
     overflow: hidden;
-}
-
-.section-style .content-position {
-    position: absolute;
-    top: 15%;
 }
 
 .section-style h2,
@@ -158,14 +148,14 @@ a {
     border-left: 10px solid #df8931;
 }
 
-#about .about-content .container-about {
+#about .container-about {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding-right: 15%;
 }
 
-#about .about-content .container-about .container-content {
+#about .container-about .container-content {
     width: 33.33%;
     margin: 3% 0;
     text-align: center;
@@ -173,12 +163,12 @@ a {
     transition: all 1s;
 }
 
-#about .about-content .container-about .content-bottom {
+#about .container-about .content-bottom {
     width: 50%;
     transition-delay: 0.75s;
 }
 
-#about .about-content .container-about .scrolled {
+#about .container-about .scrolled {
     opacity: 1;
 }
 
@@ -188,15 +178,15 @@ a {
     font-weight: 700;
 }
 
-#about .about-content .container-about .container-content a {
+#about .container-about .container-content a {
     transition: all 0.4s;
 }
 
-#about .about-content .container-about .container-content a:hover {
+#about .container-about .container-content a:hover {
     color: #aa530e;
 }
 
-#about .about-content .container-about .container-content .fa {
+#about .container-about .container-content .fa {
     font-size: 4em;
 }
 
@@ -234,32 +224,32 @@ a {
     background-color: rgb(253, 244, 231);
 }
 
-#tariff .tariff-content p {
+#tariff p {
     border-bottom: 1px solid #df8931;
     cursor: pointer;
     transform: translateX(-130%);
     transition: all 0.75s linear;
 }
 
-#tariff .tariff-content p.scrolled {
+#tariff p.scrolled {
     transform: translateX(0);
 }
 
-#tariff .tariff-content p:hover {
+#tariff p:hover {
     color: #aa530e;
 }
 
-#tariff .tariff-content p:last-child {
+#tariff p:last-child {
     border: 0;
     transform: translateX(0);
     cursor: auto;
 }
 
-#tariff .tariff-content p:last-child:hover {
+#tariff p:last-child:hover {
     color: #000;
 }
 
-#tariff .tariff-content h2 {
+#tariff h2 {
     border-color: #aa530e;
 }
 
@@ -271,18 +261,16 @@ a {
     background-color: #FFF;
 }
 
-#tips .content-tips {
-    top: 50%;
-    transform: translateY(-50%);
+#tips {
     color: #f3eded;
 }
 
-#tips .content-tips h2 {
+#tips h2 {
     border-color: #f5c16c;
 }
 
 #contact {
-    height: 95vh;
+    display: flex;
 }
 
 #contact h2 {
@@ -291,42 +279,40 @@ a {
     border: 0;
 }
 
-#contact .contact-content {
-    top: 50%;
-    transform: translateY(-50%);
-    width: 70%;
-    display: flex;
-}
-
-#contact .contact-content .container {
+#contact .container {
     width: 100%;
     padding: 10px;
 }
 
-#contact .contact-content .container p,
-#contact .contact-content .container h3 {
+#contact .container p,
+#contact .container h3 {
     padding: 0;
 }
 
-#contact .contact-content .container a,
-#contact .contact-content .container .fa {
+#contact .container a,
+#contact .container .fa {
     font-size: 24px;
     transition: all 0.4s;
 }
 
-#contact .contact-content .container .fa {
+#contact .container .fa {
     color: #aa530e;
     margin-right: 10px;
 }
 
-#contact .contact-content .container a {
+#contact .container a {
     font-family: 'Karla', sans-serif;
     font-weight: 700;
     transition: all 0.4s;
 }
 
-#contact .contact-content .container a:hover {
+#contact .container a:hover {
     color: #aa530e;
+}
+
+#contact .container iframe {
+    width: 100%;
+    height: 450px;
 }
 
 #main-foot {
