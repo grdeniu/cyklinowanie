@@ -1,0 +1,342 @@
+body {
+    margin: 0;
+}
+
+p {
+    font-family: 'Karla', sans-serif;
+    width: 80%;
+}
+
+p,
+h3 {
+    padding-left: 10px;
+}
+
+#main-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(243, 237, 237, 0.2);
+    padding: 1% 0;
+    z-index: 3;
+    transition: all 0.4s;
+}
+
+#main-nav.scrolled {
+    background-color: rgba(243, 237, 237, 0.9);
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+#main-nav .logo {
+    font-family: 'Karla', sans-serif;
+    font-size: 2em;
+    letter-spacing: 3px;
+}
+
+#main-nav .logo,
+#main-nav ul,
+#main-nav ul .main-item {
+    display: inline-block;
+}
+
+#main-nav .logo span {
+    color: #aa530e;
+}
+
+#main-nav .logo,
+#main-nav ul {
+    width: 45%;
+    padding: 0;
+}
+
+#main-nav ul .main-item {
+    padding: 0 1%;
+}
+
+#main-nav ul .main-item a {
+    text-transform: uppercase;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    transition: all 0.4s;
+}
+
+#main-nav ul .main-item a:hover {
+    color: #aa530e;
+}
+
+#main-head {
+    background-image: linear-gradient(rgba(29, 25, 31, 0.2), rgba(29, 25, 31, 0.2)), url('../img/blur-blurry-bokeh-347139.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-color: #f3eded;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+}
+
+#main-head h1 {
+    font-family: 'Cormorant Garamond';
+    border-bottom: 3px solid #f5c16c;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: 20px;
+    margin-bottom: 57px;
+    text-align: center;
+    text-indent: 24px;
+    text-transform: uppercase;
+    transition: all 0.4s;
+}
+
+#main-head h2 {
+    font-family: 'Cormorant Garamond';
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 48px;
+    margin: 0 auto 48px;
+    text-align: center;
+    transform: translateX(-140%);
+    transition: all 1s;
+    transition-delay: 0.5s;
+}
+
+#main-head #btn {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    background-color: #f5c16c;
+    color: #000;
+    border: 3px solid #f5c16c;
+    padding: 10px 10px;
+    border-radius: 10px;
+    transition: all 0.4s;
+
+}
+
+#main-head #btn:hover {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#main-head #btn:hover a {
+    color: #f5c16c;
+}
+
+.section-style {
+    position: relative;
+    background-color: #f3eded;
+    height: 100vh;
+    padding: 0 15%;
+    text-align: left;
+    overflow: hidden;
+}
+
+.section-style .content-position {
+    position: absolute;
+    top: 15%;
+}
+
+.section-style h2,
+.head-side h2 {
+    font-family: 'Karla', sans-serif;
+    font-size: 2em;
+    margin: 0;
+    padding-left: 5%;
+    border-left: 10px solid #df8931;
+}
+
+#about .about-content .container-about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-right: 15%;
+}
+
+#about .about-content .container-about .container-content {
+    width: 33.33%;
+    margin: 3% 0;
+    text-align: center;
+    opacity: 0;
+    transition: all 1s;
+}
+
+#about .about-content .container-about .content-bottom {
+    width: 50%;
+    transition-delay: 0.75s;
+}
+
+#about .about-content .container-about .scrolled {
+    opacity: 1;
+}
+
+.section-style h3,
+.head-side h3 {
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+}
+
+#about .about-content .container-about .container-content a {
+    transition: all 0.4s;
+}
+
+#about .about-content .container-about .container-content a:hover {
+    color: #aa530e;
+}
+
+#about .about-content .container-about .container-content .fa {
+    font-size: 4em;
+}
+
+.nav-side {
+    padding-left: 3%;
+    margin-bottom: 1%;
+    background-color: rgb(170, 83, 14);
+}
+
+.nav-side .fa {
+    color: #f5c16c;
+    margin-right: 1%;
+}
+
+.nav-side h1 {
+    font-family: 'Cormorant Garamond';
+    color: #f5c16c;
+    display: inline-block;
+}
+
+.head-side {
+    padding: 5%;
+    width: 70%;
+    margin: auto;
+    background-color: #f3eded;
+    border: 3px solid #f3eded;
+    border-radius: 10%;
+}
+
+.head-side p {
+    width: 100%;
+}
+
+#tariff {
+    background-color: rgb(253, 244, 231);
+}
+
+#tariff .tariff-content p {
+    border-bottom: 1px solid #df8931;
+    cursor: pointer;
+    transform: translateX(-130%);
+    transition: all 0.75s linear;
+}
+
+#tariff .tariff-content p.scrolled {
+    transform: translateX(0);
+}
+
+#tariff .tariff-content p:hover {
+    color: #aa530e;
+}
+
+#tariff .tariff-content p:last-child {
+    border: 0;
+    transform: translateX(0);
+    cursor: auto;
+}
+
+#tariff .tariff-content p:last-child:hover {
+    color: #000;
+}
+
+#tariff .tariff-content h2 {
+    border-color: #aa530e;
+}
+
+#tips {
+    background-image: linear-gradient(rgba(29, 25, 31, 0.6), rgba(29, 25, 31, 0.6)), url('../img/parkiet2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #FFF;
+}
+
+#tips .content-tips {
+    top: 50%;
+    transform: translateY(-50%);
+    color: #f3eded;
+}
+
+#tips .content-tips h2 {
+    border-color: #f5c16c;
+}
+
+#contact {
+    height: 95vh;
+}
+
+#contact h2 {
+    font-family: 'Karla', sans-serif;
+    padding-left: 5%;
+    border: 0;
+}
+
+#contact .contact-content {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 70%;
+    display: flex;
+}
+
+#contact .contact-content .container {
+    width: 100%;
+    padding: 10px;
+}
+
+#contact .contact-content .container p,
+#contact .contact-content .container h3 {
+    padding: 0;
+}
+
+#contact .contact-content .container a,
+#contact .contact-content .container .fa {
+    font-size: 24px;
+    transition: all 0.4s;
+}
+
+#contact .contact-content .container .fa {
+    color: #aa530e;
+    margin-right: 10px;
+}
+
+#contact .contact-content .container a {
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    transition: all 0.4s;
+}
+
+#contact .contact-content .container a:hover {
+    color: #aa530e;
+}
+
+#main-foot {
+    height: 5vh;
+    text-align: center;
+    background-color: #aa530e;
+    color: #df8931;
+    display: flex;
+    align-items: center;
+}
+
+#main-foot p {
+    width: 100%;
+    margin: 0;
+}

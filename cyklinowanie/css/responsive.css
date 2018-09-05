@@ -1,0 +1,147 @@
+@media all and (max-width: 1367px) {
+    #main-nav,
+    .content-position p {
+        font-size: 24px;
+    }
+    #main-head h1 {
+        font-size: 48px;
+    }
+    #main-head h2,
+    .content-position h2,
+    .content-position h3 {
+        font-size: 36px;
+    }
+    .content-position {
+        top: 10%;
+    }
+    #about .about-content .container-about .container-content {
+        width: 50%;
+    }
+    #about {
+        height: 180vh;
+    }
+    #tariff {
+        height: 160vh;
+    }
+    #tips {
+        height: 140vh;
+    }
+}
+
+@media all and (max-width: 1048px) {
+    #main-nav ul {
+        position: absolute;
+        top: 100%;
+        right: 0%;
+        margin: 0;
+        height: 0px;
+        overflow: hidden;
+        transition: all 0.7s;
+    }
+    #main-nav ul.site-nav-open {
+        height: auto;
+        transition: all 0.7s;
+    }
+    #main-nav ul .main-item {
+        display: block;
+        text-align: center;
+        background-color: rgba(243, 237, 237, 0.9);
+        margin-bottom: 3px;
+        padding-right: 5%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        transition: all 0.7s;
+    }
+    #main-nav ul .main-item:hover {
+        background-color: #aa530e;
+    }
+    #main-nav ul .main-item:hover a {
+        color: #f5c16c;
+    }
+
+    .menu-toogle {
+        background: transparent;
+        padding: 1em;
+        position: absolute;
+        right: 0.5em;
+        cursor: pointer;
+    }
+
+    .hamburger,
+    .hamburger::before,
+    .hamburger::after {
+        content: '';
+        display: block;
+        background: #000;
+        height: 3px;
+        width: 1.75em;
+        border-radius: 3px;
+        transition: all 0.4s;
+    }
+
+    .hamburger::before {
+        transform: translateY(-9px);
+    }
+
+    .hamburger::after {
+        transform: translateY(6px);
+    }
+
+    .open .hamburger {
+        transform: rotate(45deg);
+    }
+
+    .open .hamburger::before {
+        opacity: 0;
+    }
+    
+    .open .hamburger::after {
+        transform: translateY(-3px) rotate(-90deg);
+    }
+    
+    #about .about-content .container-about .container-content {
+        width: 100%;
+    }
+    #about {
+        height: 250vh;
+    }
+   .head-side {
+        font-size: 2em;
+    }
+    #contact {
+        height: 140vh;
+    }
+    #contact .contact-content {
+        flex-direction: column;
+        margin: auto;
+    }
+    #contact .contact-content .container a,
+    #contact .contact-content .container .fa {
+        font-size: 36px;
+    }
+}
+
+@media all and (max-width: 860px) {
+    #tariff,
+    #tips {
+        height: 170vh;
+    }
+}
+
+@media all and (max-width: 640px) {
+    #about {
+        height: 260vh;
+    }
+    #tips {
+        height: 220vh;
+    }
+}
+
+@media all and (max-width: 478px) {
+    #main-nav .logo {
+        font-size: 1.5em;
+    }
+    #tips {
+        height: 250vh;
+    }
+}
