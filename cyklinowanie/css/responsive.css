@@ -1,4 +1,4 @@
-@media all and (max-width: 1367px) {
+@media all and (max-width: 1366px) {
     #main-nav,
     .content-position p {
         font-size: 24px;
@@ -7,10 +7,14 @@
         font-size: 48px;
     }
     #main-head h2,
-    .content-position h2,
-    .content-position h3 {
+    .content-position h2 {
         font-size: 36px;
     }
+
+    .content-position h3 {
+        font-size: 24px;
+    }
+
     .content-position {
         top: 10%;
     }
@@ -94,18 +98,18 @@
     .open .hamburger::before {
         opacity: 0;
     }
-    
+
     .open .hamburger::after {
         transform: translateY(-3px) rotate(-90deg);
     }
-    
+
     #about .about-content .container-about .container-content {
         width: 100%;
     }
     #about {
         height: 250vh;
     }
-   .head-side {
+    .head-side {
         font-size: 2em;
     }
     #contact {
@@ -129,19 +133,57 @@
 }
 
 @media all and (max-width: 640px) {
+    #main-nav .logo {
+        padding-right: 25%;
+        font-size: 1.75em;
+    }
+    #main-head h1 {
+        letter-spacing: 2px;
+    }
     #about {
-        height: 260vh;
+        height: 280vh;
     }
     #tips {
         height: 220vh;
     }
 }
 
-@media all and (max-width: 478px) {
+@media all and (max-width: 484px) {
     #main-nav .logo {
-        font-size: 1.5em;
+        font-size: 1.25em;
+    }
+    #about {
+        height: 300vh;
     }
     #tips {
         height: 250vh;
+    }
+    .hamburger,
+    .hamburger::before,
+    .hamburger::after {
+        content: '';
+        height: 2px;
+        border-radius: 2px;
+    }
+    #contact .contact-content .container a {
+        font-size: 24px;
+    }
+}
+
+@media all and (max-width: 414px) {
+    #main-nav .logo {
+        font-size: 1em;
+    }
+    #main-head h1 {
+        font-size: 36px;
+    }
+    #main-head h2 {
+        font-size: 24px;
+    }
+    #about {
+        height: 330vh;
+    }
+    #tips {
+        height: 320vh;
     }
 }
