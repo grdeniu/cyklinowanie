@@ -117,6 +117,9 @@
     #main-head h1 {
         letter-spacing: 2px;
     }
+    #main-foot p {
+        font-size: 10px;
+    }
 }
 
 @media all and (max-width: 484px) {
