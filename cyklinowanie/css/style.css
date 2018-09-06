@@ -71,7 +71,7 @@ a {
 }
 
 #main-head {
-    background-image: linear-gradient(rgba(29, 25, 31, 0.2), rgba(29, 25, 31, 0.2)), url('../img/blur-blurry-bokeh-347139.gif');
+    background-image: linear-gradient(rgba(29, 25, 31, 0.2), rgba(29, 25, 31, 0.2)), url('../img/Artwood-Cyklinowanie-Kielce.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -111,7 +111,7 @@ a {
     transition-delay: 0.5s;
 }
 
-#main-head a{
+#main-head a {
     font-family: 'Karla', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -127,13 +127,14 @@ a {
 
 #main-head a:hover {
     background-color: rgba(255, 255, 255, 0);
+    color: #f5c16c;
 }
 
 .section-style {
     position: relative;
     background-color: #f3eded;
     height: auto;
-    padding: 10% 15%;
+    padding: 5% 15%;
     text-align: left;
     overflow: hidden;
 }
@@ -154,16 +155,11 @@ a {
 }
 
 #about .container-about .container-content {
-    width: 33.33%;
+    width: 20%;
     margin: 3% 0;
     text-align: center;
     opacity: 0;
     transition: all 1s;
-}
-
-#about .container-about .content-bottom {
-    width: 50%;
-    transition-delay: 0.75s;
 }
 
 #about .container-about .scrolled {
@@ -174,6 +170,16 @@ a {
 .head-side h3 {
     font-family: 'Karla', sans-serif;
     font-weight: 700;
+}
+
+#about .container-about .container-content {
+    padding-bottom: 2%;
+    transition: all 0.4s;
+}
+
+#about .container-about .container-content:hover {
+    transform: scale(1.1);
+    box-shadow: 3px 3px 5px 6px #ccc;
 }
 
 #about .container-about .container-content a {
@@ -251,8 +257,66 @@ a {
     border-color: #aa530e;
 }
 
+#gallery h2 {
+    margin-bottom: 5%;
+}
+
+#gallery .container {
+    width: 70%;
+    margin: auto;
+}
+
+#gallery .slider-inner {
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    padding: 3px;
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+#gallery .slider-inner img {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+#gallery .slider-inner img.active {
+    display: inline-block;
+}
+
+#gallery button {
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+}
+
+#gallery button .fa {
+    color: #FFF;
+    font-size: 2em;
+}
+
+#gallery .prev,
+.next {
+    float: left;
+    margin-top: 225px;
+    cursor: pointer;
+}
+
+#gallery .next {
+    margin-left: -35px;
+    transform: translateX(0%)
+}
+
+#gallery .prev {
+    position: relative;
+    margin-right: -45px;
+    z-index: 100;
+    transform: translateX(0%);
+}
+
+
 #tips {
-    background-image: linear-gradient(rgba(29, 25, 31, 0.6), rgba(29, 25, 31, 0.6)), url('../img/parkiet2.jpg');
+    background-image: linear-gradient(rgba(29, 25, 31, 0.2), rgba(29, 25, 31, 0.2)), url('../img/cyklinowanie-kielce-parkiet.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -267,19 +331,31 @@ a {
     border-color: #f5c16c;
 }
 
-#contact {
-    display: flex;
-}
-
 #contact h2 {
     font-family: 'Karla', sans-serif;
     padding-left: 5%;
-    border: 0;
+    margin-bottom: 5%;
+}
+
+#contact .container-flex {
+    display: flex;
+}
+
+#contact .vcard {
+    box-shadow: 3px 3px 5px 6px #ccc;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact .vcard p {
+    margin: 2% 0;
 }
 
 #contact .container {
     width: 100%;
-    padding: 10px;
 }
 
 #contact .container p,
@@ -289,7 +365,7 @@ a {
 
 #contact .container a,
 #contact .container .fa {
-    font-size: 24px;
+    font-size: 22px;
     transition: all 0.4s;
 }
 
@@ -316,11 +392,17 @@ a {
 
 #main-foot {
     height: 5vh;
-    text-align: center;
+    text-align: right;
     background-color: #aa530e;
     color: #df8931;
     display: flex;
     align-items: center;
+    color: #fff;
+    padding-right: 5%; 
+}
+
+#main-foot p a .fa {
+    color: #FFF;
 }
 
 #main-foot p {

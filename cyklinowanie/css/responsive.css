@@ -95,9 +95,14 @@
     .head-side {
         font-size: 2em;
     }
-    #contact {
+    #contact .container-flex {
         flex-direction: column;
     }
+    
+    #contact .vcard {
+        margin-bottom: 20px;
+    }  
+    
     #contact .container a,
     #contact .container .fa {
         font-size: 36px;

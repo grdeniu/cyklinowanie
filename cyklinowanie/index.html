@@ -1,23 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Cyklinowanie parkietów Kielce i okolice. Tanio, szybko i solidnie">
+    <meta name="keywords" content="Cyklinowanie, Kielce, Cyklinowanie podłóg, polerowanie, parkiet, Cyklinowanie-Kielce, Usługi cykliniarskie">
+    <meta name="author" content="Filip Grdeń">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Cykliowane-Kielce</title>
+    <title>Cykliowanie Kielce Artwood - cyklinowanie parkietów</title>
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&&Karla" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/responsive.min.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
 
 <body>
     <nav id="main-nav">
-        <a href="" class="logo">ART<span>WOOD</span></a>
+        <div class="logo-type" itemtype="http://schema.org/Organization" itemscope="url">
+            <a href="" title="ARTWOOD - CYKLINOWANIE KIELCE" class="logo">ART<span>WOOD</span></a>
+        </div>
         <ul>
             <li class="main-item"><a href="#main-head">Strona główna</a></li>
             <li class="main-item"><a href="#about">O Firmie</a></li>
             <li class="main-item"><a href="#tariff">Cennik</a></li>
+            <li class="main-item"><a href="#gallery">Galeria</a></li>
             <li class="main-item"><a href="#tips">Porady</a></li>
             <li class="main-item"><a href="#contact">Kontakt</a></li>
         </ul>
@@ -25,90 +33,109 @@
             <div class="hamburger"></div>
         </div>
     </nav>
-    <header id="main-head">
+    <header id="main-head" title="ARTWOOD - CYKLINOWANIE KIELCE">
         <h1>ARTWOOD-CYKLINOWANIE KIELCE</h1>
         <h2>Usługi z zakresu układania oraz kompleksowej renowacji podłóg drewnianych.</h2>
         <a href="#about">POZNAJ NAS</a>
     </header>
     <section id="about" class="section-style">
-            <h2>O Firmie</h2>
-            <p>Wieloletnie doświadczenie pozwala na solidne i sprawne wykonywanie poniższych usług, do których możemy zaliczyć:</p>
-            <div class="container-about">
-                <div class="container-content">
-                    <a href="ukladanie.html">
-                        <h3>Układanie podłóg</h3>
-                        <i class="fa fa-puzzle-piece" aria-hidden="true"></i>
-                    </a>
-                </div>
-                <div class="container-content">
-                    <a href="polerowanie.html">
-                        <h3>Polerowanie</h3>
-                        <i class="fa fa-tint" aria-hidden="true"></i>
-                    </a>
-                </div>
-                <div class="container-content">
-                    <a href="lakierowanie.html">
-                        <h3>Lakierowanie</h3>
-                        <i class="fa fa-eyedropper" aria-hidden="true"></i>
-                    </a>
-                </div>            
-                <div class="container-content content-bottom">
-                    <a href="listwowanie.html">
-                        <h3>Listwowanie</h3>
-                        <i class="fa fa-gavel" aria-hidden="true"></i>
-                    </a>
-                </div>
-                <div class="container-content content-bottom">
-                    <a href="cyklinowanie.html">
-                        <h3>Cyklinowanie (nowych i starych parkietów, desek i mozaiki)</h3>
-                        <i class="fa fa-paint-brush" aria-hidden="true"></i>
-                    </a>
+        <h2>O Firmie</h2>
+        <p>Wieloletnie doświadczenie pozwala na solidne i sprawne wykonywanie poniższych usług, do których możemy zaliczyć:</p>
+        <div class="container-about">
+            <div class="container-content">
+                <a href="ukladanie.html">
+                    <h3>Układanie podłóg</h3>
+                    <i class="fa fa-puzzle-piece" aria-hidden="true"></i>
+                </a>
             </div>
-            <p><b>Cyklinowanie</b> wykonywane jest bezpyłowo najlepszymi i najbardziej nowoczesnymi maszynami dostępnymi na rynku m.in.: firmy Bona i Festool. Stosujemy tylko produkty o najwyższej jakości. Nasza firma oferuje również bezpłatną konsultacje i wycenę, a usługi realizowane są zgodnie z umówionym wcześniej terminem. Zapraszamy do skorzystania z naszych usług.</p>
+            <div class="container-content">
+                <a href="polerowanie.html">
+                    <h3>Polerowanie</h3>
+                    <i class="fa fa-tint" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="container-content">
+                <a href="lakierowanie.html">
+                    <h3>Lakierowanie</h3>
+                    <i class="fa fa-eyedropper" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="container-content">
+                <a href="listwowanie.html">
+                    <h3>Listwowanie</h3>
+                    <i class="fa fa-gavel" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="container-content">
+                <a href="cyklinowanie.html">
+                    <h3>Cyklinowanie</h3>
+                    <i class="fa fa-paint-brush" aria-hidden="true"></i>
+                </a>
+            </div>
+            <p><strong>Cyklinowanie</strong> wykonywane jest bezpyłowo najlepszymi i najbardziej nowoczesnymi maszynami dostępnymi na rynku m.in.: firmy Bona i Festool. Stosujemy tylko produkty o najwyższej jakości. Nasza firma oferuje również bezpłatną konsultacje i wycenę, a usługi realizowane są zgodnie z umówionym wcześniej terminem. Zapraszamy do skorzystania z naszych usług.</p>
         </div>
     </section>
     <section id="tariff" class="section-style">
-            <h2>Cennik</h2>
-            <h3>Cyklinowanie</h3>
-            <p>- od 16 zł/m2</p>
-            <h3>Polerowanie</h3>
-            <p>- 3 zł/m2</p>
-            <h3>Szpachlowanie</h3>
-            <p>- 3 zł/m2</p>
-            <h3>Lakierowanie</h3>
-            <p>- 3 zł/m2</p>
-            <h3>Montaż listew przypodłogowych</h3>
-            <p>- od 6 zł/mb</p>
-            <p>Podane powyżej ceny są cenami netto i nie zawierają kosztu materiałów. Koszt usług może ulec zmianie i jest ustalany indywidualnie w zależności od posiadanego metrażu. <br><br> <b>CENA UZGADNIANA JEST Z KAŻDYM KLIENTEM INDYWIDUALNIE.</b><br><br> <b>ZAPRASZAMY !</b>
-            </p>
+        <h2>Cennik</h2>
+        <h3>Cyklinowanie</h3>
+        <p>- od 16 zł/m2</p>
+        <h3>Polerowanie</h3>
+        <p>- 3 zł/m2</p>
+        <h3>Szpachlowanie</h3>
+        <p>- 3 zł/m2</p>
+        <h3>Lakierowanie</h3>
+        <p>- 3 zł/m2</p>
+        <h3>Montaż listew przypodłogowych</h3>
+        <p>- od 6 zł/mb</p>
+        <p>Podane powyżej ceny są cenami netto i nie zawierają kosztu materiałów. Koszt usług może ulec zmianie i jest ustalany indywidualnie w zależności od posiadanego metrażu. <br><br> <strong> CENA UZGADNIANA JEST Z KAŻDYM KLIENTEM INDYWIDUALNIE.</strong><br><br> <strong>ZAPRASZAMY !</strong>
+        </p>
+    </section>
+    <section id="gallery" class="section-style">
+        <h2>Galeria</h2>
+        <div class="container">
+            <div class="slider-outer">
+                <button class="prev"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                <div class="slider-inner">
+                    <img src="img/cyklinowanie-kielce-maszyna.jpg" class="active" alt="maszyna-do-cyklinowania-kielce">
+                    <img src="img/cyklinowanie-parkiet-kielce.jpg" alt="parkiet-cyklinowany">
+                    <img src="img/cyklinowanie-kielce-maszyna2.jpg" alt="maszyna-do-cyklinowania">
+                    <img src="img/cyklinowanie-kielce-parkiet2.jpg" alt="cyklinowany-parkiet">
+                    <img src="img/cyklinowanie-kielce-maszyna3.jpg" alt="maszyna-cyklinowanie">
+                    <img src="img/cyklinowanie-kielce-parkiet3.jpg" alt="parkiet-kielce-cyklinowanie">
+                </div>
+                <button class="next"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+            </div>
+        </div>
     </section>
     <section id="tips" class="section-style">
-            <h2>Porady</h2>
-            <h3>Jak postępować ze świeżo polakierowaną podłogą?</h3>
-            <p>W pierwszych tygodniach po zakończeniu prac lakierniczych, podłogi drewnianej nie powinno się przykrywać dywanami.</p>
-            <h3>Jak pielęgnować podłogę z naturalnego drewna?</h3>
-            <p>Podłogi drewniane reagują na zmieniające się warunki otoczenia. Drewno absorbuje parę wodną i rozszerza się, gdy wilgotność powietrza rośnie lub kurczy się, gdy wilgotność powietrza w pomieszczeniu spada. Może to objawić się zmianą wymiaru i kształtu klepek, a w najgorszym przypadku powstawaniu szczelin i pęknięć, gdy wilgotność powietrza jest za niska. Najkorzystniejsze warunki, jakie powinny panować w pokoju, w którym znajduje się podłoga drewniana to 45% – 60% wilgotności względnej powietrza oraz temperatura w granicach 18ºC – 20ºC. W okresie zimowym można podnieść wilgotność w pomieszczeniu wykorzystując do tego nawilżacze elektryczne. Aby uniknąć uszkodzeń mechanicznych należy stosować podkładki filcowe pod nogi krzeseł, stołów i innych mebli, a do mycia nie stosować detergentów i ostrych środków czyszczących. Podczas użytkowania podłogę drewnianą należy czyścić i pielęgnować za pomocą preparatów przeznaczonych do podłóg drewnianych. Dzięki temu właściwie zamontowana, polakierowana i użytkowana podłoga może elegancko wyglądać i służyć przez długie lata.</p>
+        <h2>Porady</h2>
+        <h3>Jak postępować ze świeżo polakierowaną podłogą?</h3>
+        <p>W pierwszych tygodniach po zakończeniu prac lakierniczych, podłogi drewnianej nie powinno się przykrywać dywanami.</p>
+        <h3>Jak pielęgnować podłogę z naturalnego drewna?</h3>
+        <p>Podłogi drewniane reagują na zmieniające się warunki otoczenia. Drewno absorbuje parę wodną i rozszerza się, gdy wilgotność powietrza rośnie lub kurczy się, gdy wilgotność powietrza w pomieszczeniu spada. Może to objawić się zmianą wymiaru i kształtu klepek, a w najgorszym przypadku powstawaniu szczelin i pęknięć, gdy wilgotność powietrza jest za niska. Najkorzystniejsze warunki, jakie powinny panować w pokoju, w którym znajduje się podłoga drewniana to 45% – 60% wilgotności względnej powietrza oraz temperatura w granicach 18ºC – 20ºC. W okresie zimowym można podnieść wilgotność w pomieszczeniu wykorzystując do tego nawilżacze elektryczne. Aby uniknąć uszkodzeń mechanicznych należy stosować podkładki filcowe pod nogi krzeseł, stołów i innych mebli, a do mycia nie stosować detergentów i ostrych środków czyszczących. Podczas użytkowania podłogę drewnianą należy czyścić i pielęgnować za pomocą preparatów przeznaczonych do podłóg drewnianych. Dzięki temu właściwie zamontowana, polakierowana i użytkowana podłoga może elegancko wyglądać i służyć przez długie lata.</p>
     </section>
     <section id="contact" class="section-style">
-            <div class="container">
-                <h2>Kontakt</h2>
-                <h3>„Artwood” Witold Kwieciński <br> Cyklinowanie Kielce</h3>
-                <p>25-640 Kielce <br> ul. Tektoniczna 35/53</p>
+        <h2>Kontakt</h2>
+        <div class="container-flex">
+            <div class="container vcard">
+                <h3 class="org">„Artwood” Cyklinowanie Kielce</h3>
+                <p class="fn">Witold Kwieciński</p>
+                <p class="postal-code">25-640</p>
+                <p class="locality">Kielce</p>
+                <p>ul. <span class="street-adress">
+            Tektoniczna 35/53
+            </span></p>
                 <p>NIP : 959 001 25 80</p>
-                <i class="fa fa-phone" aria-hidden="true"></i>              
-                <a href="tel:+48507864090">507 864 090</a><br>
-                 <i class="fa fa-envelope" aria-hidden="true"></i>
-                <a href="mailto:wkwiet@op.pl">wkwiet@op.pl</a>
+                <a href="tel:+48507864090"><i class="fa fa-phone" aria-hidden="true"></i>507 864 090</a><br> <a href="mailto:wkwiet@op.pl">  <i class="fa fa-envelope" aria-hidden="true"></i>wkwiet@op.pl</a>
             </div>
             <div class="container">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2516.8727745073934!2d20.57693592313533!3d50.889065029849334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471828154904cbc9%3A0x4d61b0800254c0b5!2sTektoniczna+35%2C+25-001+Kielce!5e0!3m2!1spl!2spl!4v1535904331558" allowfullscreen></iframe>
             </div>
+        </div>
     </section>
     <footer id="main-foot">
-        <p>© Copyright 2018 by Filip Grdeń.</p>
+        <p><a href="https://grdeniu.github.io/Filip-Grden-portfolio/"><i class="fa fa-github" aria-hidden="true"></i></a>© Copyright 2018 by Filip Grdeń.</p>
     </footer>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/main.js"></script>
 </body>
 
 </html>
