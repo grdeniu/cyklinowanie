@@ -48,23 +48,32 @@ function transformHead() {
 }
 
 function sliderEffect() {
+
     $('.next').on('click', function () {
         var currentImg = $('.active');
         var nextImg = currentImg.next();
+        var classPic = $('.slider-inner img:last-child').attr('class');
 
         if (nextImg.length) {
             currentImg.removeClass('active').css('z-index', -10);
             nextImg.addClass('active').css('z-index', 10);
         }
+        if (classPic == 'active') {
+            $('.next').css('opacity', '0');
+        } 
     });
 
     $('.prev').on('click', function () {
         var currentImg = $('.active');
         var prevImg = currentImg.prev();
+        var classPic = $('.slider-inner img:last-child').attr('class');
 
         if (prevImg.length) {
             currentImg.removeClass('active').css('z-index', -10);
             prevImg.addClass('active').css('z-index', 10);
+        }
+        if (classPic == 'active'){
+           $('.next').css('opacity', '1');
         }
     });
 }

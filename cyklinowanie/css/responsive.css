@@ -13,9 +13,6 @@
     .section-style h3 {
         font-size: 24px;
     }
-    #about .container-about .container-content {
-        width: 50%;
-    }
 }
 
 @media all and (max-width: 1048px) {
