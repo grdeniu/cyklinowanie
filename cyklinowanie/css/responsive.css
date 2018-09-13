@@ -1,22 +1,22 @@
 @media all and (max-width: 1366px) {
     #main-nav,
     p {
-        font-size: 24px;
+        font-size: 1em;
     }
     #main-head h1 {
-        font-size: 48px;
+        font-size: 1.5em;
     }
     #main-head h2,
     .section-style h2 {
-        font-size: 36px;
+        font-size: 1.25em;
     }
     .section-style h3 {
-        font-size: 24px;
+        font-size: 1em;
     }
 }
 
 @media all and (max-width: 1048px) {
-    #main-nav ul {
+    #main-nav ul.main-ul {
         position: absolute;
         top: 100%;
         right: 0%;
@@ -28,6 +28,7 @@
     #main-nav ul.site-nav-open {
         height: auto;
         transition: all 0.7s;
+        width: 100%;
     }
     #main-nav ul .main-item {
         display: block;
@@ -89,20 +90,20 @@
     #about .container-about .container-content {
         width: 100%;
     }
-    .head-side {
-        font-size: 2em;
+    .head-side h2 {
+        font-size: 1em;
     }
     #contact .container-flex {
         flex-direction: column;
     }
-    
+
     #contact .vcard {
         margin-bottom: 20px;
-    }  
-    
+    }
+
     #contact .container a,
     #contact .container .fa {
-        font-size: 36px;
+        font-size: 24px;
     }
 }
 
@@ -113,6 +114,16 @@
     }
     #main-head h1 {
         letter-spacing: 2px;
+    }
+    #tariff .tariff-flex h3,
+    #tariff .tariff-flex p {
+        width: 100%;
+    }
+    #gallery .container {
+    width: 100%;
+    }
+    #contact {
+        padding: 0;
     }
     #main-foot p {
         font-size: 10px;
@@ -131,21 +142,11 @@
         border-radius: 2px;
     }
     #contact .container a {
-        font-size: 24px;
+        font-size: 20px;
     }
 }
 
 @media all and (max-width: 414px) {
     #main-nav .logo {
         font-size: 1em;
-    }
-    #main-head h1 {
-        font-size: 36px;
-    }
-    #main-head h2 {
-        font-size: 24px;
-    }
-    #tips {
-        height: 350vh;
-    }
 }

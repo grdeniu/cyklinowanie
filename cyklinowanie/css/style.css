@@ -2,7 +2,8 @@ body {
     margin: 0;
 }
 
-p {
+p,
+span {
     font-family: 'Karla', sans-serif;
 }
 
@@ -134,7 +135,6 @@ a {
     position: relative;
     background-color: #f3eded;
     height: auto;
-    padding: 5% 15%;
     text-align: left;
     overflow: hidden;
 }
@@ -170,6 +170,10 @@ a {
 .head-side h3 {
     font-family: 'Karla', sans-serif;
     font-weight: 700;
+}
+
+.head-side ul li {
+    font-family: 'Karla', sans-serif;
 }
 
 #about .container-about .container-content {
@@ -228,29 +232,36 @@ a {
     background-color: rgb(253, 244, 231);
 }
 
-#tariff p {
-    border-bottom: 1px solid #df8931;
-    cursor: pointer;
-    transform: translateX(-130%);
-    transition: all 0.75s linear;
+#tariff .tariff-flex {
+    display: flex;
+    flex-wrap: wrap;
 }
+
+#tariff .tariff-flex p {
+    transform: translateX(150%);
+    transition: all 0.75s linear;
+    text-align: center;
+    opacity: 0;
+}
+
+#tariff .tariff-flex p,
+#tariff .tariff-flex h3 {
+    padding: 10px 0;
+    width: 50%;
+    border-bottom: 1px solid #df8931;
+    margin: 15px 0;
+}
+
+#tariff .tariff-flex p:hover {
+    background-color: #aa530e;
+    color: #f5c16c;
+}
+
+#tariff .tariff-flex h3 {}
 
 #tariff p.scrolled {
     transform: translateX(0);
-}
-
-#tariff p:hover {
-    color: #aa530e;
-}
-
-#tariff p:last-child {
-    border: 0;
-    transform: translateX(0);
-    cursor: auto;
-}
-
-#tariff p:last-child:hover {
-    color: #000;
+    opacity: 1;
 }
 
 #tariff h2 {
@@ -342,8 +353,10 @@ a {
 }
 
 #contact .vcard {
-    box-shadow: 3px 3px 5px 6px #ccc;
-    margin-right: 10%;
+    border: 2px solid #df8931;
+    border-radius: 5%;
+    margin-right: 5%;
+    padding: 2% 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -398,7 +411,7 @@ a {
     display: flex;
     align-items: center;
     color: #fff;
-    padding-right: 5; 
+    padding-right: 5%;
 }
 
 #main-foot p a .fa {
